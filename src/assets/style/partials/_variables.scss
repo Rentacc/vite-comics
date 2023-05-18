@@ -1,0 +1,21 @@
+
+//HEADER//
+@mixin nav-bar{
+    display: flex;
+    justify-content: space-around;
+    height: 125px;
+    
+}
+
+@mixin color-text{
+    list-style: none;
+    align-items: center;
+    gap: 0.8rem;
+    display: flex;
+   
+}
+
+@mixin size-img{
+    margin-top: 1rem;
+    height: 85px;
+}
