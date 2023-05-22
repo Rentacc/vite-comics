@@ -1,27 +1,33 @@
 <script>
-import AppHeader from './components/AppHeader.vue';
- //const AppHeader = valore esportato dal file importato
- import AppFooter from './components/AppFooter.vue';
- import AppContent from './components/AppContent.vue';
- 
+import AppHeader from './components/AppHeader.vue'
+import AppContent from './components/AppContent.vue'
+import AppFooter from './components/AppFooter.vue'
+
+
 export default{
-  components: {
+  components:{
     AppHeader,
-    AppFooter,
     AppContent,
-   
-  },
-
-};
-
+    AppFooter,
+  }
+}
 </script>
 
 <template>
-<app-header></app-header>
-<AppContent></AppContent>
-<AppFooter></AppFooter>
+ <AppHeader />
+ <AppContent />
+ <AppFooter />
 </template>
 
-<style scoped>
+<style lang="scss">
+ @use './assets/style/partials/_variables.scss' as *;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+ .max-container{
+   @include max-container
+}
 </style>
